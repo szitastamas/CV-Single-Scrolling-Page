@@ -53,9 +53,13 @@
 @media(max-width: 769px){
 
     .about-text-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
         width: 100%;
         padding: 0 1rem;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .about-text{
