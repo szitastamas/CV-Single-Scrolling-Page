@@ -1,6 +1,7 @@
 #school{
     width: 100%;
     background: var(--secondary-color);
+    overflow: hidden;
 }
 
 .school-container{
