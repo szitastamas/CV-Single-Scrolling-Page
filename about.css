@@ -60,14 +60,11 @@
 
     .about-text{
         text-align: center;
+        padding: 1rem;
     }
 
-    .fa-info-circle{
-        top: 1%;
-        left: .5%;
-    }
-
-    .fa-info-circle:last-child{
-        display: none;
+    .profile-pic{
+        float: none;
+        margin: 2rem auto;
     }
 }
