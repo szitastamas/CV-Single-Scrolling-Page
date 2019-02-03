@@ -1,0 +1,217 @@
+#school{
+    width: 100%;
+    background: var(--secondary-color);
+}
+
+.school-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+}
+
+.school-heading{
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 4rem 0rem;
+    width: 100%;
+}
+
+.school-heading h2{
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.school-heading i{
+    margin: 0 1rem;
+}
+
+.school-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
+    grid-gap: 5rem;
+    margin: 0 2rem;
+    padding: 0 2rem;
+}
+
+.school-card{
+    display: flex;
+    margin-bottom: 9rem;
+    position: relative;
+    transform: rotate(15deg);
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.school-card > .school-pic{
+    transform: rotate(-45deg);
+    transform-origin: right top;
+    animation: swing 1500ms linear infinite;
+    position: absolute;
+    top: 97%;
+    right: 3%;
+    width: 220px;
+    height: 220px;
+}
+
+.school-card-1 > .school-pic{
+    background: url(img/kid.png) no-repeat center center/cover;
+}
+.school-card-2 > .school-pic{
+    background: url(img/highschool.jpg) no-repeat center center/cover;
+}
+.school-card-3 > .school-pic{
+    background: url(img/uni.jpg) no-repeat center center/cover;
+}
+.school-card-4 > .school-pic{
+    background: url(img/berlitz.jpg) no-repeat center center/cover;
+}
+.school-card-5 > .school-pic{
+    background: url(img/it-student.png) no-repeat center center/cover;
+}
+
+.school-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: rgba(15, 15, 15, .7);
+    padding: 1rem;
+    line-height: 1.2;
+    background: rgba(15, 15, 15, .1);
+}
+
+.school-text > ul > hr{
+    margin: 1rem auto;
+    width: 80%;
+    border-color: #fff;
+}
+
+.school-text > ul{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.school-text > ul > li{
+    list-style: none;
+}
+
+.school-text > p{
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+/* ANIMATION */
+
+
+
+
+@keyframes swing{
+    0% {transform: rotate(-45deg);}
+    30% {transform: rotate(-55deg);}
+    50% {transform: rotate(-45deg);}
+    70% {transform: rotate(-35deg);}
+    100% {transform: rotate(-45deg);}
+}
+
+
+.needle{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    font-size: 2rem;
+    transform: rotate(45deg);
+}
+
+.test-needle{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    font-size: 2rem;
+    transform: rotate(25deg);
+    top: 90%;
+    left: 64%;
+    z-index: 2;
+}
+
+.school-text{
+    color: #fff;
+    padding: 1rem 1rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    width: 100%;
+
+}
+
+
+@media(min-width: 1250px){
+    .school-cards{
+        grid-gap: 15rem;
+    }
+
+    .school-card > .school-pic{
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+@media(min-width: 1000px) and (max-width: 1249px){
+
+    .school-cards{
+        grid-gap: 10rem;
+    }
+
+    .school-card:nth-child(even){
+        transform: rotate(15deg) translateY(260px);
+    }
+}
+
+@media(max-width: 768px){
+    .school-cards{
+        display: block;
+    }
+
+    .school-card{
+        transform: rotate(15deg);
+        width: calc(100vw - 30px);
+        max-width: 380px;
+        margin-bottom: 17rem;
+        position: relative;
+    }
+
+    .school-card > .school-pic{
+        height: 200px;
+        width: 200px;
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media(max-width: 700px){
+
+    .school-card{
+        transform: none;
+    }
+
+    .school-card > .school-pic{
+        right: 50%;
+    }
+}
+
+@media(max-width: 376px){
+    .school-card > .school-pic{
+        height: 160px;
+        width: 160px;
+    }
+}

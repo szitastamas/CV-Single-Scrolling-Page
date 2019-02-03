@@ -1,0 +1,138 @@
+#contact{
+    height: 100%;
+    width: 100%;
+}
+
+.contact-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.form-area{
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+.form-area > h2{
+    padding: 2rem;
+}
+
+.form-area > h2 > i{
+    margin: 0 1rem;
+    color: var(--secondary-color)
+}
+
+.form-group > label{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.form-area > .form-group > label, .form-area > .form-group > input{
+    display: block;
+    width: 100%;
+    padding:.75rem;
+}
+
+.form-area > .form-group > input:focus,
+.form-area > .form-group > textarea:focus{
+    background: rgba(9, 0, 138, 0.05);
+}
+
+.form-area > .form-group > input, .form-area > .form-group > textarea{
+    border: none;
+    outline: none;
+    background: rgba(20, 20, 20, .03);
+    transition: box-shadow 150ms ease-out;
+}
+
+.form-area > .form-group > input:focus, .form-area > .form-group > input:hover, .form-area > .form-group > textarea:focus, .form-area > .form-group > textarea:hover{
+    box-shadow: inset 0 0 2px 0 var(--secondary-color);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    min-height: 6rem;
+    padding: .5rem;
+}
+
+.form-btn{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: .75rem;
+    margin: 1rem auto;
+    border: none;
+    outline: none;
+    box-shadow: 0;
+    font-size: 1.1rem;
+    background-color: rgba(20, 20, 20, .2);
+    color: var(--primary-color);
+    transition: background-color 200ms ease-out,
+                color 200ms ease-out;
+}
+
+.form-btn:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+#alert{
+    padding: .75rem;
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: left left;
+    transition: all 200ms ease-in-out;
+}
+
+#alert.show{
+    opacity: 1;
+    transform: none;
+}
+
+.error{
+    background-color: red;
+    color: #fff;
+}
+
+.success{
+    background-color: green;
+    color: #fff;
+}
+
+@media(min-width: 1160px){
+    .contact-container{
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media(max-width: 900px){
+    .contact-container{
+        display: block;
+    }
+}
+
+@media(max-width: 425px){
+
+    .form-area{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form-area > h2{
+        font-size: 1.4rem;
+    }
+
+    .form-group > label{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,72 @@
+/* ABOUT SECTION */
+
+#about{
+    height: 100%;
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.about-container{
+    height: 100%;
+    background: -moz-linear-gradient(rgb(0, 0, 0),  var(--secondary-color));
+    background: -o-linear-gradient(rgb(0, 0, 0),  var(--secondary-color));
+    background: -webkit-linear-gradient(rgb(0, 0, 0),  var(--secondary-color));
+    background: linear-gradient(rgb(0, 0, 0),  var(--secondary-color));
+}
+
+.about-container > h3{
+    font-size: 1.8rem;
+    padding: 4.5rem 1rem 3rem 1rem;
+    background: rgb(250, 250, 250);
+    text-align: center;
+}
+
+.about-text-card{
+    height: auto;
+    max-width: 900px;
+    margin: 5rem auto;
+    background: rgba(15, 15, 15, .1);
+}
+
+.about-text{
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem;
+    color: var(--text-color);
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.profile-pic{
+    background: url(img/profilpic.jpg) no-repeat center center/cover;
+    float: left;
+    width: 13rem;
+    height: 16rem;
+    border-radius: 35%;
+    box-shadow: 0 0 10px 1px var(--secondary-color);
+    margin: 3rem;
+    shape-outside: circle();
+}
+
+@media(max-width: 769px){
+
+    .about-text-card{
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    .about-text{
+        text-align: center;
+    }
+
+    .fa-info-circle{
+        top: 1%;
+        left: .5%;
+    }
+
+    .fa-info-circle:last-child{
+        display: none;
+    }
+}
