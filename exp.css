@@ -150,10 +150,12 @@
 
     .timeline > ul > li > div > h3{
         font-size: 1.3rem;
+        padding: 0;
+        text-align: center;
     }
 
     .timeline > ul > li:nth-child(even) div h3{
-        text-align: left;
+        text-align: center;
     }
 
     .timeline > ul > li > div > p{
