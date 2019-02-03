@@ -6,7 +6,7 @@
     top: 0;
     width: 100%;
     color: var(--text-color);
-    z-index: 2;
+    z-index: 5;
     background: rgba(15, 15, 15, 1);
 }
 
