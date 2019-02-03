@@ -148,8 +148,16 @@
         left: 40px;
     }
 
+    .timeline > ul > li > div > h3{
+        font-size: 1.5rem;
+    }
+
     .timeline > ul > li:nth-child(even) div h3{
         text-align: left;
+    }
+
+    .timeline > ul > li > div > p{
+        text-align: center;
     }
 
     .timeline > ul > li:nth-child(even) div:before{
@@ -158,4 +166,3 @@
         border-color: transparent #d4d4d4 transparent transparent;
     }
 }
-
