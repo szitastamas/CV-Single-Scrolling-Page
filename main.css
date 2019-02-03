@@ -22,7 +22,6 @@ body{
     color: var(--primary-color);
     background: rgb(240, 240, 240);
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
 
 /* UTILITY CLASSES */
