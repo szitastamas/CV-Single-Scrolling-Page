@@ -3,6 +3,7 @@
 #exp{
     height: 100%;
     background-color: rgb(240, 240, 240);
+    overflow: hidden;
 }
 
 #exp > .tl-header > h3{
