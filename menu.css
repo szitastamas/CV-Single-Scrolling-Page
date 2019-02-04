@@ -2,7 +2,6 @@
 
 #nav{
     position: sticky;
-    position: -webkit-sticky;
     display: block;
     top: 0;
     width: 100%;
@@ -134,6 +133,20 @@
     padding: 0rem 1rem;
     list-style: none;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 1500ms ease-in-out 200ms;
+}
+
+.language:first-child{
+    transition: opacity 1500ms ease-in-out 200ms;
+}
+
+.language:nth-child(2){
+    transition: opacity 1500ms ease-in-out 300ms;
+}
+
+.language:nth-child(3){
+    transition: opacity 1500ms ease-in-out 400ms;
 }
 
 .language > a{
