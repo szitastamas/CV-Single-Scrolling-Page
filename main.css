@@ -65,6 +65,8 @@ body{
     line-height: 2;
     color: var(--text-color);
     padding: 2rem;
+    opacity: 0;
+    transition: 1500ms opacity ease-in-out 200ms;
 }
 
 
@@ -79,6 +81,7 @@ body{
     font-size: 1rem;
     color: var(--text-color);
 }
+
 
 @media(max-width: 767px){
     .lg-heading{
