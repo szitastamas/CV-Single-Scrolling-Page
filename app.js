@@ -1,3 +1,9 @@
+this.addEventListener('load', () => {
+    homeNav.classList.add('current');
+    document.querySelector('.showcase-content').style.opacity = "1";
+    document.querySelectorAll('.language').forEach(item => item.style.opacity = "1");
+})
+
 const menuBtn = document.querySelector('.menu-btn');
 
 menuBtn.addEventListener('click', toggleMenu);
@@ -7,10 +13,6 @@ function toggleMenu(){
 
 const nav = document.getElementById('nav');
 
-
-this.addEventListener('load', () => {
-    homeNav.classList.add('current');
-})
 
 window.onscroll = function() {
     window.pageYOffset > 100 ? nav.style.backgroundColor = "rgba(15, 15, 15, .85)" : nav.style.backgroundColor = "rgba(15, 15, 15, 1)";
