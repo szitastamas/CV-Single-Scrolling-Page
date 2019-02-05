@@ -7,7 +7,7 @@
 .contact-container{
     height: 100%;
     width: 100%;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     background-color: #fff;
@@ -110,9 +110,39 @@ textarea{
     color: #fff;
 }
 
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icons > p{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 2rem .5rem;
+    text-align: center;
+}
+
+.contact-icons > .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icons > .icons > a{
+    color: var(--primary-color);
+    margin: 1rem;
+    transition: color 100ms ease-in-out;
+}
+
+.contact-icons > .icons > a:hover{
+    color: var(--secondary-color);
+}
+
 @media(min-width: 1160px){
     .contact-container{
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
     }
 }
 
