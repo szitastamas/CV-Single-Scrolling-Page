@@ -29,7 +29,7 @@ const contactNav = document.querySelector('.contact-nav');
 const showcase = document.querySelector('.showcase-container');
 const aboutMe = document.getElementById('about');
 const education = document.querySelector('#school');
-const experience = document.querySelector('.timeline');
+const experience = document.getElementById('exp');
 const contactMe = document.getElementById('contact');
 
 window.onscroll = function() {
