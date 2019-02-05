@@ -18,15 +18,16 @@
 
 .school-heading{
     text-align: center;
-    background: var(--secondary-color);
-    padding: 4rem 0rem;
+    background: #fff;
+    padding: 4.5rem 1rem 3rem 1rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
 .school-heading h2{
     letter-spacing: 3px;
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .school-heading i{
