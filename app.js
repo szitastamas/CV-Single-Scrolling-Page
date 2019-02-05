@@ -1,9 +1,13 @@
+//Window onload events
+
 this.addEventListener('load', () => {
     homeNav.classList.add('current');
     document.querySelector('.showcase-content').style.opacity = "1";
     document.querySelector('.showcase-content').style.transform = "none";
     document.querySelectorAll('.language').forEach(item => item.style.opacity = "1");
 })
+
+//Toggle Menu
 
 const menuBtn = document.querySelector('.menu-btn');
 
@@ -14,6 +18,19 @@ function toggleMenu(){
 
 const nav = document.getElementById('nav');
 
+//Window onscroll events
+
+const navItems = document.querySelectorAll('.nav-item');
+const homeNav = document.querySelector('.home-nav');
+const aboutNav = document.querySelector('.about-nav');
+const eduNav = document.querySelector('.edu-nav');
+const expNav = document.querySelector('.exp-nav');
+const contactNav = document.querySelector('.contact-nav');
+const showcase = document.querySelector('.showcase-container');
+const aboutMe = document.getElementById('about');
+const education = document.querySelector('#school');
+const experience = document.querySelector('.timeline');
+const contactMe = document.getElementById('contact');
 
 window.onscroll = function() {
     window.pageYOffset > 100 ? nav.style.backgroundColor = "rgba(15, 15, 15, .85)" : nav.style.backgroundColor = "rgba(15, 15, 15, 1)";
@@ -28,18 +45,6 @@ window.onscroll = function() {
         }
     })
 }
-
-const navItems = document.querySelectorAll('.nav-item');
-const homeNav = document.querySelector('.home-nav');
-const aboutNav = document.querySelector('.about-nav');
-const eduNav = document.querySelector('.edu-nav');
-const expNav = document.querySelector('.exp-nav');
-const contactNav = document.querySelector('.contact-nav');
-const showcase = document.querySelector('.showcase-container');
-const aboutMe = document.getElementById('about');
-const education = document.querySelector('#school');
-const experience = document.querySelector('.timeline');
-const contactMe = document.getElementById('contact');
 
 
 // Navigation Current class & Menu hide
@@ -74,12 +79,6 @@ const isInViewport = el => {
             document.documentElement.clientWidth)    
     );
 };
-
-// const run = () => ;
-
-// window.addEventListener('load', run);
-// window.addEventListener('resize', run);
-// window.addEventListener('scroll', run);
 
 //FORM VALIDATION
 
