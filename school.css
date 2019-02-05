@@ -201,6 +201,10 @@
 }
 
 @media(max-width: 700px){
+    
+    .school-cards{
+    padding: 0rem 2rem;
+    }
 
     .school-card{
         transform: none;
