@@ -65,9 +65,11 @@ body{
     line-height: 2;
     color: var(--text-color);
     padding: 2rem;
+    transition: 1500ms opacity ease-in-out 200ms, 1500ms transform ease-in-out 200ms;
     opacity: 0;
-    transition: 1500ms opacity ease-in-out 200ms;
+    transform: translate(0, 20px);
 }
+
 
 
 /* FOOTER */
