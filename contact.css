@@ -90,8 +90,8 @@ textarea{
     text-align: center;
     text-transform: uppercase;
     opacity: 0;
-    transform: scale(0);
-    transform-origin: bottom center;
+    transform: rotateX(90deg) translate3d(0, 30px, -10px);
+    transform-origin: center bottom;
     transition: all 200ms ease-in-out;
 }
 
