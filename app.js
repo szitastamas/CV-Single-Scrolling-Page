@@ -1,6 +1,7 @@
 this.addEventListener('load', () => {
     homeNav.classList.add('current');
     document.querySelector('.showcase-content').style.opacity = "1";
+    document.querySelector('.showcase-content').style.transform = "none";
     document.querySelectorAll('.language').forEach(item => item.style.opacity = "1");
 })
 
