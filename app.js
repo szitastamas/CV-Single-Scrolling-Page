@@ -67,7 +67,7 @@ window.onscroll = () => {
     showcaseContent.style.transform =
       'translateY(' + window.pageYOffset * 0.7 + 'px)';
   }
-  showcaseContent.style.opacity = 1 - window.pageYOffset / 700;
+  showcaseContent.style.opacity = 1 - window.pageYOffset / 600;
 };
 
 // Navigation Current class & Menu hide
