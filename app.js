@@ -60,8 +60,13 @@ window.onscroll = () => {
     }
   });
 
-  showcaseContent.style.transform =
-    'translateY(' + window.pageYOffset * 0.7 + 'px)';
+    if (window.innerWidth < 400) {
+    showcaseContent.style.transform =
+      'translateY(' + window.pageYOffset * 0.3 + 'px)';
+  } else {
+    showcaseContent.style.transform =
+      'translateY(' + window.pageYOffset * 0.7 + 'px)';
+  }
   showcaseContent.style.opacity = 1 - window.pageYOffset / 700;
 };
 
